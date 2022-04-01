@@ -1,0 +1,126 @@
+.nav {
+    overflow: ;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: var(--whiteColor);
+    transition: all 1s ease;
+}
+.nav:hover {
+    width: 206px;
+}
+.logo-img {
+    width: 68px;
+    height: 34px;
+    margin-left: 16px;
+    margin-top: 52px;
+    transition: all 1s ease;
+}
+.nav:hover .logo-img {
+    height: 34px;
+    width: 68px;
+    margin-left: 69px;
+    margin-top: 44px;
+    border-radius: 0px; 
+}
+.line1 {
+    height: 0px;
+    width: 62.24px;
+    margin-left: 18px;
+    margin-top: 16px;
+    border: 2px solid var(--lineColor);
+    transition: all 1s ease;
+}
+.nav:hover .line1 {
+    width: 128.22px;
+    margin-left: 39px;
+    margin-top: 32.03px;
+}
+.icon {
+    max-height: 59px;
+    overflow: hidden;
+}
+.icon.active {
+    width: 89px;
+    height: 57px;
+    margin-top: 31.97px;
+    margin-left: 11px;
+    background: var(--purelyWhite);
+    border-radius: 25px 0px 0px 25px;
+    transition: all 1s ease;
+}
+.icon.active a {
+    margin-left: 19px;
+    margin-top: 19px;
+    color: var(--blueColor);
+}
+.nav:hover .icon.active {
+    width: 195px;
+}
+.home { 
+    width: 25px;
+    height: 25px;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+.calendar {
+    height: 25px;
+    width: 25px;
+    margin-left: 37px;
+    margin-top: 34px;
+    border-radius: 0px;
+}
+.components {
+    height: 25px;
+    width: 25px;
+    margin-left: 37px;
+    margin-top: 34px;
+    border-radius: 0px;
+}
+.games {
+    height: 25px;
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 34px;
+    border-radius: 0px;
+}
+.icon a {
+    display: none;
+    height: 18px;
+    margin-left: 19px;
+    margin-top: 37px;
+    font-family: var(--mainFont);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--lineColor);
+    transition: all 1s ease-out;
+}
+.nav:hover .icon a {
+    display: inline-block;
+}
+.line-bottom {
+    height: 0px;
+    width: 346.01px;
+    margin: auto;
+    margin-top: 836px;
+    border: 1px solid var(--blueColor);
+}
+.f-txt {
+    height: 24px;
+    width: 184px;
+    margin: auto;
+    margin-top: 11px;
+    color: var(--blueColor);
+    font-family: var(--mainFont);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+}
