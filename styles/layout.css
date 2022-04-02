@@ -1,6 +1,5 @@
 .nav {
-    overflow: ;
-    position: absolute;
+    position: fixed;
     width: 100px;
     height: 100%;
     left: 0px;
@@ -87,7 +86,8 @@
     border-radius: 0px;
 }
 .icon a {
-    display: none;
+    display: inline-block;
+    width: 58px;
     height: 18px;
     margin-left: 19px;
     margin-top: 37px;
@@ -99,10 +99,6 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--lineColor);
-    transition: all 1s ease-out;
-}
-.nav:hover .icon a {
-    display: inline-block;
 }
 .line-bottom {
     height: 0px;
