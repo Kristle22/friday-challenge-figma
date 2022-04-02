@@ -29,7 +29,7 @@
     width: 62.24px;
     margin-left: 18px;
     margin-top: 16px;
-    border: 2px solid var(--lineColor);
+    border-bottom: 4px solid var(--lineColor);
     transition: all 1s ease;
 }
 .nav:hover .line1 {
@@ -105,7 +105,7 @@
     width: 346.01px;
     margin: auto;
     margin-top: 836px;
-    border: 1px solid var(--blueColor);
+    border-bottom: 2px solid var(--blueColor);
 }
 .f-txt {
     height: 24px;
