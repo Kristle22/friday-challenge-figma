@@ -1,117 +1,113 @@
 .nav {
-    position: fixed;
-    width: 100px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: var(--whiteColor);
-    transition: all 1s ease;
+  position: fixed;
+  width: 100px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: var(--whiteColor);
+  transition: all 1s ease;
+  z-index: 1;
 }
 .nav:hover {
-    width: 206px;
+  width: 206px;
 }
 .logo-img {
-    width: 68px;
-    height: 34px;
-    margin: 52px 0 0 16px;
-    transition: all 1s ease;
+  width: 68px;
+  height: 34px;
+  margin: 52px 0 0 16px;
+  transition: all 1s ease;
 }
 .nav:hover .logo-img {
-    height: 34px;
-    width: 68px;
-    margin: 44px 0 0 69px;
-    border-radius: 0px; 
+  height: 34px;
+  width: 68px;
+  margin: 44px 0 0 69px;
+  border-radius: 0px;
 }
 .line1 {
-    height: 0px;
-    width: 62.24px;
-    margin: 16px 0 0 18px;
-    border-bottom: 4px solid var(--lineColor);
-    transition: all 1s ease;
+  height: 0px;
+  width: 62.24px;
+  margin: 16px 0 0 18px;
+  border-bottom: 4px solid var(--lineColor);
+  transition: all 1s ease;
 }
 .nav:hover .line1 {
-    width: 128.22px;
-    margin: 32px 0 0 39px;
+  width: 128.22px;
+  margin: 32px 0 0 39px;
 }
 .icon {
-    max-height: 59px;
-    overflow: hidden;
+  max-height: 59px;
+  overflow: hidden;
 }
 .icon.active {
-    width: 89px;
-    height: 57px;
-    margin: 32px 0 0 11px;
-    background: var(--purelyWhite);
-    border-radius: 25px 0px 0px 25px;
-    transition: all 1s ease;
+  width: 89px;
+  height: 57px;
+  margin: 32px 0 0 11px;
+  background: var(--purelyWhite);
+  border-radius: 25px 0px 0px 25px;
+  transition: all 1s ease;
 }
 .icon.active a {
-    margin: 19px 0 0 19px;
-    color: var(--blueColor);
+  margin: 19px 0 0 19px;
+  color: var(--blueColor);
 }
 .nav:hover .icon.active {
-    width: 195px;
+  width: 195px;
 }
-.home { 
-    width: 25px;
-    height: 25px;
-    margin: 16px 0 0 32px;
+.home {
+  width: 25px;
+  height: 25px;
+  margin: 16px 0 0 32px;
 }
 .calendar {
-    height: 25px;
-    width: 25px;
-    margin: 34px 0 0 37px;
-    border-radius: 0px;
+  height: 25px;
+  width: 25px;
+  margin: 34px 0 0 37px;
+  border-radius: 0px;
 }
 .components {
-    height: 25px;
-    width: 25px;
-    margin: 34px 0 0 37px;
-    border-radius: 0px;
+  height: 25px;
+  width: 25px;
+  margin: 34px 0 0 37px;
+  border-radius: 0px;
 }
 .games {
-    height: 25px;
-    width: 40px;
-    margin: 34px 0 0 30px;;
-    border-radius: 0px;
+  height: 25px;
+  width: 40px;
+  margin: 34px 0 0 30px;
+  border-radius: 0px;
 }
 .icon a {
-    display: inline-block;
-    width: 58px;
-    height: 18px;
-    text-decoration: none;
-    margin: 37px 0 0 19px;
-    color: var(--lineColor);
-    font-family: var(--mainFont);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
+  display: inline-block;
+  width: 58px;
+  height: 18px;
+  text-decoration: none;
+  margin: 37px 0 0 19px;
+  color: var(--lineColor);
+  font-family: var(--mainFont);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .icon a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .footer {
-    position: absolute;
-    left: calc(50% - 173px);
-    bottom: 0;
+  margin-left: calc(50% - 173px);
 }
 .line-bottom {
-    height: 0px;
-    width: 346px;
-    border-bottom: 2px solid var(--blueColor);
+  height: 0px;
+  max-width: 346px;
+  border-bottom: 2px solid var(--blueColor);
 }
 .f-txt {
-    height: 24px;
-    width: 184px;
-    margin: auto;
-    margin-top: 11px;
-    color: var(--blueColor);
-    font-family: var(--mainFont);
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 13px;
-    letter-spacing: 0em;
-    text-align: left;
+  height: 24px;
+  width: 346px;
+  color: var(--blueColor);
+  font-family: var(--mainFont);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  text-align: center;
 }

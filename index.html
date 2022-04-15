@@ -39,9 +39,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
       rel="stylesheet"
     />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS styles -->
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
     <title>Figma project</title>
   </head>
   <body>
@@ -69,9 +77,26 @@
         <a href="#">Games</a>
       </div>
     </nav>
+    <section>
+      <div class="flex-cont">
+        <div class="name">
+          <p>Good morning, <span id="myName"></span></p>
+        </div>
+        <div class="time">
+          <span id="hours"></span>
+          <p id="date"></p>
+        </div>
+      </div>
+      <div class="img"></div>
+      <div class="hint">
+        <p>"First, solve the problem. Then, write the code"- John Johnson.</p>
+      </div>
+    </section>
     <footer class="footer">
       <div class="line-bottom"></div>
       <p class="f-txt">&copy; Baltic Institute of technology</p>
     </footer>
+
+    <script src="./js/home.js"></script>
   </body>
 </html>
