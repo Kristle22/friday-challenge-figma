@@ -1,20 +1,23 @@
 ![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
-# Sigma project
+# Figma project
 
 _35 group website project_
 
-This project is for **educational** purposes, that improves CSS skills and other Frontend knowledges. 
+This project is for **educational** purposes, encouraging students to improve HTML, CSS, JS and other front-end skills by building various components and simple JS games.
 
 Site published at: https://kristle22.github.io/friday-challenge-figma/
 
-Design: [Layout]
+Figma design: [Layout]
 
 ## Project features
 
--   Github pages (multi-page)
--   HTML form
--  Figma project
+- Github pages (multi-page)
+- HTML form
+- Figma project
+- fixed nav
+  -linear-gradient backgraound
+  -current Date & Timers (Javascript)
 
 ## Authors
 
