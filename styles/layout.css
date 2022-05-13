@@ -111,3 +111,29 @@
   font-weight: 500;
   line-height: 13px;
 }
+
+@media (max-width: 800px) {
+  .flex-cont {
+    flex-direction: column-reverse;
+  }
+  .name {
+    width: 285px;
+    margin: 0 150px 13px 141px;
+  }
+  .time {
+    width: 72%;
+    margin: 44px 32px 33px 125px;
+    padding: 40px;
+  }
+  .hint {
+    width: 72%;
+    margin-left: 300px;
+    flex: 100%;
+  }
+  .footer {
+    text-align: center;
+    max-width: 60%;
+    margin-left: 190px;
+    padding: 0 30px;
+  }
+}

@@ -54,7 +54,7 @@
   justify-content: center;
   align-items: center;
   max-width: 898px;
-  width: 80%;
+  width: 95%;
   height: 121px;
   margin: 49px auto 33px;
   padding: 20px;
@@ -62,30 +62,4 @@
   border: 2px solid #02577a;
   box-sizing: border-box;
   border-radius: 25px;
-}
-
-@media (max-width: 800px) {
-  .flex-cont {
-    flex-direction: column-reverse;
-  }
-  .name {
-    width: 285px;
-    margin: 0 150px 13px 141px;
-  }
-  .time {
-    width: 72%;
-    margin: 44px 32px 33px 125px;
-    padding: 40px;
-  }
-  .hint {
-    width: 72%;
-    margin-left: 125px;
-    flex: 100%;
-  }
-  .footer {
-    text-align: center;
-    max-width: 60%;
-    margin-left: 155px;
-    padding: 0 3;
-  }
 }
