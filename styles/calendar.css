@@ -123,12 +123,12 @@ button.button {
   border-radius: 50%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .table {
     font-size: 1.2em;
   }
   .table td {
-    line-height: 50px;
+    line-height: 20px;
     padding: 0 10px;
   }
 }
@@ -150,6 +150,11 @@ button.button {
   }
   button.button {
     align-self: flex-end;
+  }
+}
+@media (max-width: 700px) {
+  .table td {
+    line-height: 40px;
   }
 }
 @media (max-width: 600px) {
@@ -186,7 +191,7 @@ button.button {
     padding: 0 5px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .table td {
     line-height: 33px;
     padding: 0 7px;
