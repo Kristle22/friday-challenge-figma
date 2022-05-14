@@ -11,7 +11,7 @@ img.calendar {
   display: flex;
   gap: 40px;
   width: calc(100% - 140px);
-  margin: 60px 0 60px 140px;
+  margin: 40px 0 60px 140px;
 }
 .add-tasks {
   display: flex;
@@ -123,40 +123,72 @@ button.button {
   border-radius: 50%;
 }
 
+@media (max-width: 900px) {
+  .table {
+    font-size: 1.2em;
+  }
+  .table td {
+    line-height: 50px;
+    padding: 0 10px;
+  }
+}
 @media (max-width: 800px) {
   .flex-cont {
     flex-direction: column reverse;
     gap: 25px;
+    margin-left: 110px;
   }
   .add-tasks {
-    width: 90%;
+    width: 75%;
   }
   .main-calendar {
-    width: 90%;
+    width: 75%;
     max-height: 520px;
   }
   .table td {
     line-height: 60px;
   }
+  button.button {
+    align-self: flex-end;
+  }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
+  .main-calendar {
+    width: 100%;
+    padding: 20px;
+  }
+  .add-tasks {
+    width: 100%;
+    font-size: 0.8rem;
+    gap: 20px;
+  }
+  .task {
+    max-height: 100px;
+  }
+  .task .line {
+    height: 10px;
+    margin: 0;
+  }
   .main-calendar h6,
   .main-calendar lnr {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  table {
+    margin: 0;
   }
   .table tr:nth-child(1) {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   .table td {
-    font-size: 0.7em;
-    line-height: 12px;
+    font-size: 0.8em;
+    line-height: 50px;
+    padding: 0 5px;
   }
 }
-.button {
-  align-self: flex-end;
-}
-@media (max-width: 950px) {
-  .table {
-    font-size: 1.2em;
+@media (max-width: 450px) {
+  .table td {
+    line-height: 33px;
+    padding: 0 7px;
   }
 }
