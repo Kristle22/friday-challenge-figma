@@ -11,6 +11,9 @@
 .nav:hover {
   width: 206px;
 }
+.nav:hover .icon a {
+  font-size: 16px;
+}
 .logo-img {
   width: 68px;
   height: 34px;
@@ -84,11 +87,12 @@
   margin: 37px 0 0 19px;
   color: var(--lineColor);
   font-family: var(--mainFont);
-  font-size: 16px;
+  font-size: 0px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
+  transition: all 0.6s ease-out;
 }
 .icon a:hover {
   text-decoration: underline;
@@ -120,16 +124,16 @@
   }
   div.name {
     width: 50%;
-    margin-left: -5%;
+    margin-left: 20%;
   }
   div.time {
-    width: 75%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 26%;
     padding: 40px;
   }
   section .hint {
     width: 73%;
-    margin: 3% 3% 0 25%;
+    margin: 3% 3% 0 26%;
   }
   .footer {
     text-align: center;

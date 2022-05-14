@@ -20,7 +20,7 @@
 
 .name {
   width: 25%;
-  margin: 20px 0 50px 100px;
+  margin: 60px 0 20px 100px;
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
@@ -28,10 +28,10 @@
 
 .time {
   width: 40%;
-  margin: 50px 0 10px 0;
+  margin-top: 40px;
   background: #ffffff;
   border-radius: 25px;
-  padding: 22px 65px 0 65px;
+  padding: 22px 65px 22px 65px;
 }
 .time p {
   font-weight: 500;
@@ -49,9 +49,8 @@
   justify-content: center;
   align-items: center;
   width: 60%;
-  height: 121px;
-  margin: 10% 3% 3% 20%;
-  padding: 20px;
+  margin: 3% 3% 3% 20%;
+  padding: 40px 20px;
   text-align: center;
   border: 2px solid #02577a;
   box-sizing: border-box;

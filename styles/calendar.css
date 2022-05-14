@@ -1,16 +1,3 @@
-.flex-cont {
-  display: flex;
-  justify-content: space-around;
-  gap: 40px;
-  width: 100%;
-  margin: 60px 0 60px 0;
-}
-.add-tasks {
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-  width: 50%;
-}
 img.home {
   margin: 34px 0 0 37px;
 }
@@ -19,34 +6,43 @@ img.calendar {
   height: 25px;
   margin: 16px 0 0 32px;
 }
+
+.flex-cont {
+  display: flex;
+  gap: 40px;
+  width: calc(100% - 140px);
+  margin: 60px 0 60px 140px;
+}
+.add-tasks {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  width: 40%;
+}
 .task {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 80%;
-  max-height: 155px;
-  min-height: 100px;
-  margin-left: 140px;
+  width: 100%;
+  max-height: 145px;
   background: var(--purelyWhite);
   border-radius: 25px;
-  padding: 20px 35px 5px 35px;
+  padding: 20px 35px 10px 35px;
 }
 .task > h6 {
-  font-size: 26px;
   font-weight: 700;
 }
 .task > p {
-  font-size: 20px;
   font-weight: 500;
   line-height: 35px;
   color: var(--lineColor);
 }
 .task .line {
-  width: 188px;
+  width: 50%;
   height: 20px;
   background: #fc0000;
   border-radius: 25px;
-  margin: 20px 0 15px 0;
+  margin: 10px 0;
 }
 .task .yellow {
   background-color: yellow;
@@ -59,16 +55,18 @@ img.calendar {
   font-size: 24px;
   line-height: 15px;
   font-weight: 700;
+  cursor: pointer;
 }
-.button {
+button.button {
   width: 70px;
   height: 70px;
-  margin-left: 168px;
   border-radius: 50%;
   border: 3px solid var(--blueColor);
   background: var(--blueColor);
   font-size: 48px;
   color: #ffffff;
+  cursor: pointer;
+  align-self: flex-start;
   transition: all 0.3s ease-out;
 }
 .button:hover {
@@ -77,46 +75,47 @@ img.calendar {
 }
 .main-calendar {
   width: 50%;
-  margin-right: 20px;
-  min-width: fit-content;
-  max-height: 490px;
+  max-height: 480px;
   background: var(--purelyWhite);
   border-radius: 25px;
   padding: 30px;
+  overflow: hidden;
 }
 .main-calendar .lnr {
   display: inline-block;
   margin: 5px 20px 0;
-  font-weight: 700;
+  cursor: pointer;
 }
 .main-calendar h6 {
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .table {
   border-collapse: collapse;
+  table-layout: fixed;
   width: 100%;
-  font-size: 24px;
-  text-align: center;
-}
-.table td {
-  line-height: 45px;
-  padding: 0 5px;
+  height: 90%;
+  font-size: 1.3rem;
   font-weight: 700;
 }
+.table td {
+  padding: 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
 .table tr:nth-child(1) {
+  font-size: 0.7em;
   border-bottom: 1px solid var(--lineColor);
   color: var(--lineColor);
 }
-.table tr:nth-child(2) {
-  color: var(--lineColor);
-}
+.table tr:nth-child(2),
 .table tr:nth-child(7) {
   color: var(--lineColor);
 }
 .table .black {
-  color: black;
+  color: #000;
 }
 .table .currday {
   background-color: var(--blueColor);
@@ -130,19 +129,34 @@ img.calendar {
     gap: 25px;
   }
   .add-tasks {
-    width: 100%;
+    width: 90%;
   }
   .main-calendar {
-    width: 70%;
-    margin-left: 140px;
+    width: 90%;
+    max-height: 520px;
   }
-  .button {
-    align-self: flex-end;
-    margin-right: 20px;
+  .table td {
+    line-height: 60px;
   }
 }
-@media (max-width: 1150px) {
-  .task {
-    width: 70%;
+@media (max-width: 550px) {
+  .main-calendar h6,
+  .main-calendar lnr {
+    font-size: 1em;
+  }
+  .table tr:nth-child(1) {
+    font-size: 0.7em;
+  }
+  .table td {
+    font-size: 0.7em;
+    line-height: 12px;
+  }
+}
+.button {
+  align-self: flex-end;
+}
+@media (max-width: 950px) {
+  .table {
+    font-size: 1.2em;
   }
 }

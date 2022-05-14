@@ -4,7 +4,7 @@
   --whiteColor: #f7f6ff;
   --lineColor: #c4c4c4;
   --purelyWhite: #ffffff;
-  --mainFont: "Montserrat", sans-serif;
+  --mainFont: 'Montserrat', sans-serif;
 }
 body,
 body * {
@@ -17,4 +17,5 @@ body * {
 body {
   font-family: var(--mainFont);
   background-color: var(--backgColor);
+  font-size: 1em;
 }
