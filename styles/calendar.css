@@ -9,25 +9,26 @@ img.calendar {
 
 .flex-cont {
   display: flex;
-  gap: 40px;
-  width: calc(100% - 140px);
-  margin: 40px 0 60px 140px;
+  gap: 60px;
+  margin: 40px 0 60px 150px;
+  width: calc(100% - 150px);
+  min-width: 250px;
 }
 .add-tasks {
   display: flex;
   gap: 40px;
   flex-direction: column;
-  width: 40%;
+  width: 45%;
 }
 .task {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  max-height: 145px;
+  max-height: 155px;
   background: var(--purelyWhite);
   border-radius: 25px;
-  padding: 20px 35px 10px 35px;
+  padding: 35px 35px 15px 35px;
 }
 .task > h6 {
   font-weight: 700;
@@ -38,7 +39,7 @@ img.calendar {
   color: var(--lineColor);
 }
 .task .line {
-  width: 50%;
+  width: 188px;
   height: 20px;
   background: #fc0000;
   border-radius: 25px;
@@ -52,7 +53,7 @@ img.calendar {
 }
 .task .dots {
   align-self: flex-end;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 15px;
   font-weight: 700;
   cursor: pointer;
@@ -74,11 +75,11 @@ button.button {
   background-color: var(--backgColor);
 }
 .main-calendar {
-  width: 50%;
-  max-height: 480px;
+  width: 45%;
+  max-height: 550px;
   background: var(--purelyWhite);
   border-radius: 25px;
-  padding: 30px;
+  padding: 30px 50px;
   overflow: hidden;
 }
 .main-calendar .lnr {
@@ -94,13 +95,14 @@ button.button {
 .table {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 100%;
+  width: 95%;
   height: 90%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .table td {
-  padding: 0 10px;
+  line-height: 30px;
+  padding: 12px 0;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -122,14 +124,53 @@ button.button {
   color: var(--purelyWhite);
   border-radius: 50%;
 }
-
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
+  .flex-cont {
+    gap: 30px;
+  }
+  .main-calendar {
+    padding: 20px 10px;
+  }
   .table {
-    font-size: 1.2em;
+    width: 100%;
+  }
+  div.task {
+    max-height: 160px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .main-calendar {
+    max-height: 540px;
+  }
+}
+@media (max-width: 950px) {
+  .main-calendar {
+    padding: 20px;
+    max-height: 450px;
+  }
+  .table {
+    font-size: 1em;
+    height: 80%;
   }
   .table td {
-    line-height: 20px;
-    padding: 0 10px;
+    line-height: 10px;
+    padding: 0 50px;
+  }
+  .table td {
+    line-height: 10px;
+    padding: 0 12px;
+  }
+  .main-calendar h6,
+  .main-calendar lnr {
+    font-size: 1.2em;
+  }
+  div.task {
+    max-height: 135px;
+    padding: 15px 30px;
+  }
+  .task .line {
+    height: 10px;
   }
 }
 @media (max-width: 800px) {
@@ -167,33 +208,29 @@ button.button {
     font-size: 0.8rem;
     gap: 20px;
   }
-  .task {
-    max-height: 100px;
+  div.task {
+    max-height: 130px;
   }
-  .task .line {
-    height: 10px;
-    margin: 0;
-  }
-  .main-calendar h6,
-  .main-calendar lnr {
-    font-size: 1.2em;
-    margin: 0;
-  }
-  table {
-    margin: 0;
-  }
-  .table tr:nth-child(1) {
-    font-size: 0.6em;
-  }
-  .table td {
-    font-size: 0.8em;
-    line-height: 50px;
-    padding: 0 5px;
-  }
+}
+.main-calendar h6,
+.main-calendar lnr {
+  font-size: 1.2em;
+  margin: 0;
+}
+table {
+  margin: 0;
+}
+.table td {
+  font-size: 1.2em;
+  line-height: 50px;
+  padding: 0 5px;
 }
 @media (max-width: 500px) {
   .table td {
     line-height: 33px;
     padding: 0 7px;
+  }
+  .task .line {
+    max-width: 100%;
   }
 }
