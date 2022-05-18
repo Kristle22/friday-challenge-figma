@@ -141,29 +141,7 @@ button.button {
 
 @media (max-width: 1150px) {
   .main-calendar {
-    max-height: 540px;
-  }
-}
-@media (max-width: 950px) {
-  .main-calendar {
-    padding: 20px;
     max-height: 450px;
-  }
-  .table {
-    font-size: 1em;
-    height: 80%;
-  }
-  .table td {
-    line-height: 10px;
-    padding: 0 50px;
-  }
-  .table td {
-    line-height: 10px;
-    padding: 0 12px;
-  }
-  .main-calendar h6,
-  .main-calendar lnr {
-    font-size: 1.2em;
   }
   div.task {
     max-height: 135px;
@@ -171,6 +149,41 @@ button.button {
   }
   .task .line {
     height: 10px;
+  }
+  .table {
+    font-size: 1em;
+  }
+  .table .td {
+    line-height: 15px;
+    padding: 0 50px;
+  }
+}
+@media (max-width: 900px) {
+  .main-calendar {
+    padding: 20px;
+    max-height: 420px;
+  }
+  .table {
+    font-size: 0.8em;
+    height: 80%;
+  }
+  .table td {
+    line-height: 10px;
+    padding: 0 50px;
+  }
+  .main-calendar h6,
+  .main-calendar lnr {
+    font-size: 1em;
+  }
+  .add-tasks {
+    font-size: 0.8em;
+  }
+  div.task {
+    max-height: 120px;
+    padding: 15px 30px;
+  }
+  .task .line {
+    height: 7px;
   }
 }
 @media (max-width: 800px) {
@@ -180,14 +193,18 @@ button.button {
     margin-left: 110px;
   }
   .add-tasks {
-    width: 75%;
+    width: 70%;
   }
   .main-calendar {
-    width: 75%;
+    width: 70%;
     max-height: 520px;
   }
+  .table {
+    font-size: 1em;
+  }
   .table td {
-    line-height: 60px;
+    line-height: 50px;
+    padding: 0 20px;
   }
   button.button {
     align-self: flex-end;
@@ -210,6 +227,7 @@ button.button {
   }
   div.task {
     max-height: 130px;
+    padding: 20px;
   }
 }
 .main-calendar h6,
@@ -220,15 +238,19 @@ button.button {
 table {
   margin: 0;
 }
+.table tr:nth-child(1) {
+  font-size: 0.6em;
+}
 .table td {
   font-size: 1.2em;
   line-height: 50px;
-  padding: 0 5px;
+  padding: 0 12px;
 }
 @media (max-width: 500px) {
   .table td {
-    line-height: 33px;
-    padding: 0 7px;
+    font-size: 1em;
+    line-height: 30px;
+    padding: 0 3px;
   }
   .task .line {
     max-width: 100%;
