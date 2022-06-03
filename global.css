@@ -17,5 +17,4 @@ body * {
 body {
   font-family: var(--mainFont);
   background-color: var(--backgColor);
-  font-size: 1em;
 }

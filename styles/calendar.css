@@ -77,62 +77,102 @@ button.button {
 .main-calendar {
   width: 45%;
   max-height: 550px;
+  padding: 10px 20px 20px 50px;
   background: var(--purelyWhite);
   border-radius: 25px;
-  padding: 30px 50px;
   overflow: hidden;
 }
-.main-calendar .lnr {
-  display: inline-block;
-  margin: 5px 20px 0;
+.month {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.date {
+  text-align: center;
+}
+span.lnr {
+  margin-top: -26px;
+}
+
+.month span {
+  font-size: 1.3rem;
   cursor: pointer;
 }
-.main-calendar h6 {
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 30px;
+
+.month h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
-.table {
-  border-collapse: collapse;
-  table-layout: fixed;
-  width: 95%;
-  height: 90%;
-  font-size: 1.5rem;
-  font-weight: 700;
+.month p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--blueColor);
 }
-.table td {
-  line-height: 30px;
-  padding: 12px 0;
-  text-align: center;
-  vertical-align: middle;
+
+.weekdays {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--lineColor);
+  border-bottom: 2px solid var(--lineColor);
+  padding: 0.5rem;
+}
+.weekdays div {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  width: 90%;
+  height: 85%;
+  font-weight: 600;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.5rem 0;
+}
+.days div {
+  font-size: 1.3rem;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out;
+}
+
+.days div:hover:not(.today) {
+  background-color: var(--backgColor);
+  color: var(--blueColor);
+  border: 1px solid var(--blueColor);
   cursor: pointer;
 }
-.table tr:nth-child(1) {
-  font-size: 0.7em;
-  border-bottom: 1px solid var(--lineColor);
+.prev-date,
+.next-date {
   color: var(--lineColor);
 }
-.table tr:nth-child(2),
-.table tr:nth-child(7) {
-  color: var(--lineColor);
-}
-.table .black {
-  color: #000;
-}
-.table .currday {
+.today {
   background-color: var(--blueColor);
   color: var(--purelyWhite);
-  border-radius: 50%;
+  cursor: pointer;
 }
+
 @media (max-width: 1200px) {
   .flex-cont {
     gap: 30px;
   }
   .main-calendar {
     padding: 20px 10px;
-  }
-  .table {
-    width: 100%;
   }
   div.task {
     max-height: 160px;
@@ -150,30 +190,11 @@ button.button {
   .task .line {
     height: 10px;
   }
-  .table {
-    font-size: 1em;
-  }
-  .table .td {
-    line-height: 15px;
-    padding: 0 50px;
-  }
 }
 @media (max-width: 900px) {
   .main-calendar {
     padding: 20px;
     max-height: 420px;
-  }
-  .table {
-    font-size: 0.8em;
-    height: 80%;
-  }
-  .table td {
-    line-height: 10px;
-    padding: 0 50px;
-  }
-  .main-calendar h6,
-  .main-calendar lnr {
-    font-size: 1em;
   }
   .add-tasks {
     font-size: 0.8em;
@@ -185,6 +206,17 @@ button.button {
   .task .line {
     height: 7px;
   }
+  .weekdays div {
+    font-size: 0.8rem;
+  }
+  .days div {
+    font-size: 1rem;
+  }
+  .weekdays,
+  .days {
+    width: 100%;
+    gap: 1.2rem 0.2rem;
+  }
 }
 @media (max-width: 800px) {
   .flex-cont {
@@ -193,29 +225,28 @@ button.button {
     margin-left: 110px;
   }
   .add-tasks {
-    width: 70%;
+    width: 80%;
   }
   .main-calendar {
-    width: 70%;
-    max-height: 520px;
-  }
-  .table {
-    font-size: 1em;
-  }
-  .table td {
-    line-height: 50px;
-    padding: 0 20px;
+    width: 80%;
+    max-height: 500px;
   }
   button.button {
     align-self: flex-end;
   }
-}
-@media (max-width: 700px) {
-  .table td {
-    line-height: 40px;
+  .weekdayd div,
+  .days div {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+  .weekdays,
+  .days {
+    width: 100%;
+    gap: 0.5rem;
+    padding: 1rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .main-calendar {
     width: 100%;
     padding: 20px;
@@ -229,30 +260,31 @@ button.button {
     max-height: 130px;
     padding: 20px;
   }
+  .weekdays div,
+  .days div {
+    font-size: 1rem;
+    padding: 15px 0;
+  }1
 }
-.main-calendar h6,
-.main-calendar lnr {
-  font-size: 1.2em;
-  margin: 0;
-}
-table {
-  margin: 0;
-}
-.table tr:nth-child(1) {
-  font-size: 0.6em;
-}
-.table td {
-  font-size: 1.2em;
-  line-height: 50px;
-  padding: 0 12px;
-}
-@media (max-width: 500px) {
-  .table td {
-    font-size: 1em;
-    line-height: 30px;
-    padding: 0 3px;
-  }
+@media (max-width: 550px) {
   .task .line {
     max-width: 100%;
+  }
+  .main-calendar {
+    padding: 0.2rem;
+  }
+  .weekdays,
+  .days {
+    width: 100%;
+    gap: 0;
+  }
+  .weekdays div {
+    font-size: 0.7rem;;
+  }
+  .days div {
+    font-size: 0.8rem;
+  }
+  .days div {
+    padding: 7px;
   }
 }
