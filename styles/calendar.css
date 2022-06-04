@@ -113,7 +113,7 @@ span.lnr {
 }
 
 .weekdays {
-  width: 95%;
+  width: 92%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 0.1rem;
