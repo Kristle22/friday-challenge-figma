@@ -46,11 +46,17 @@ const renderCalendar = () => {
 
 document.querySelector('.prev').addEventListener('click', () => {
   date.setMonth(date.getMonth() - 1);
+
+  document.querySelector('.date h6').innerHTML = new Intl.DateTimeFormat('en-Us', { year: 'numeric', month: 'long' }).format(date)
+
   renderCalendar();
 });
 
 document.querySelector('.next').addEventListener('click', () => {
   date.setMonth(date.getMonth() + 1);
+
+  document.querySelector('.date h6').innerHTML = new Intl.DateTimeFormat('en-Us', { year: 'numeric', month: 'long' }).format(date)
+
   renderCalendar();
 });
 

@@ -121,7 +121,7 @@ span.lnr {
   align-items: center;
   color: var(--lineColor);
   border-bottom: 2px solid var(--lineColor);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .weekdays div {
   font-size: 1.2rem;
