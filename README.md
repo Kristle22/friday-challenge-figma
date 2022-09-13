@@ -2,6 +2,8 @@
 
 # Figma project
 
+Figma is a powerful design tool that helps you to create anything: websites, applications, logos, and much more. By learning to use Figma, you'll take your first steps into User Interface Design and and User Experience Design.
+
 _35 group website project_
 
 This project is for **educational** purposes, encouraging students to improve HTML, CSS, JS and other front-end skills by building various components and simple JS games.
@@ -12,6 +14,7 @@ Figma design:
 
 # Home Page
 
+![figma](./img/figma_layout.png)
 ![figma](./img/figma_home.png)
 
 # Calendar
