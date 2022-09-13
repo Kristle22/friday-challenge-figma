@@ -8,7 +8,15 @@ This project is for **educational** purposes, encouraging students to improve HT
 
 Site published at: https://kristle22.github.io/friday-challenge-figma/
 
-Figma design: [Layout]
+Figma design:
+
+# Home Page
+
+![figma](./img/figma_home.png)
+
+# Calendar
+
+![figma](./img/figma_calendar.png)
 
 ## Project features
 
