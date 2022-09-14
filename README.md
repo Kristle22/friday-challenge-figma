@@ -27,8 +27,8 @@ Figma design:
 - HTML form
 - Figma project
 - fixed nav
-  -linear-gradient backgraound
-  -current Date & Timers (Javascript)
+-linear-gradient backgraound
+-current Date & Timers (Javascript)
 
 ## Authors
 
