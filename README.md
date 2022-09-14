@@ -26,9 +26,11 @@ Figma design:
 - Github pages (multi-page)
 - HTML form
 - Figma project
-- fixed nav
--linear-gradient backgraound
--current Date & Timers (Javascript)
+- fixed / spreading on hover nav
+- linear-gradient backgraound
+- current Date & Time (Javascript)
+- JavaScript Calendar
+- responsive design
 
 ## Authors
 
